@@ -155,9 +155,7 @@ export default function MyApp() {
             scrollbar-none max-lg:overflow-visible max-lg:scrollbar-default max-lg:mt-0  max-md:mt-0  max-md:overflow-visible max-md:scrollbar-default max-sm:hidden">
               <Previsiondays />
             </section>
-
             
-
           </section>
           
         </>

@@ -10,6 +10,7 @@ import NavMobile from "./composents/navmobile";
 const VIEWS = {
   VIEW1: "view1",
   VIEW2: "view2",
+  VIEW3: "view3",
 };
 
 export default function MyApp() {
@@ -60,7 +61,7 @@ export default function MyApp() {
 
   return (
     <section className="font-Roboto h-screen bg-gray-950 grid grid-cols-Grid gap-3 py-2 px-2 bg-[url('./assets/images/background.jpeg')] 
-    bg-cover bg-center w-ful max-md:overflow-auto max-md:h-screen max-sm:grid-cols-1 max-sm:fixed">
+    bg-cover bg-center w-ful max-md:overflow-auto max-md:h-screen max-sm:grid-cols-1 max-sm:fixed max-sm:w-full">
 
       {/* colonne 1 */}
       <section className="bg-slate-50 bg-opacity-35 px-2 rounded-xl max-sm:hidden">
@@ -98,10 +99,10 @@ export default function MyApp() {
         <>
           {/* colle 2*/}
           <section className="grid grid-cols-Grideux gap-3 pr-2 max-lg:overflow-auto max-lg:grid-cols-1 max-md:overflow-auto max-md:grid-cols-1 
-          max-sm:h-[92vh]">
+          max-sm:h-[90vh]">
             {/* colonne 1 Grideux */}
             <section className="rounded-xl min-w-[90%] overflow-auto scrollbar scrollbar-none max-lg:overflow-visible max-lg:scrollbar-default max-md:overflow-visible max-md:scrollbar-default
-            max-sm:overflow-auto max-sm:min-w-full max-sm:max-w-full max-sm:h-[78vh]">
+            max-sm:overflow-auto max-sm:min-w-full max-sm:max-w-full max-sm:h-[86vh]">
               <div className=" bg-slate-50 z-50 bg-opacity-40 py-1 rounded-xl ">
                 <h1 className="flex justify-center text-5xl text-blue-950 max-sm:text-center max-sm:text-4xl">Meteo-App</h1>
               </div>
@@ -146,32 +147,44 @@ export default function MyApp() {
               <Realfroid />
             </section>
 
-            {/* la nav bar pour le phone mobile */}
-            <section className="hidden max-sm:block">
-                < NavMobile />
-            </section>
+            
 
             {/*colonne 2 Grideux */}
-            <section className="bg-slate-50 bg-opacity-35 mt-36 rounded-xl py-4 px-4 overflow-auto 
-            scrollbar-none max-lg:overflow-visible max-lg:scrollbar-default max-lg:mt-0  max-md:mt-0  max-md:overflow-visible max-md:scrollbar-default max-sm:hidden">
+            <section className="bg-slate-50 bg-opacity-35 mt-36 rounded-xl py-4 px-4 overflow-auto scrollbar-none max-lg:overflow-visible 
+            max-lg:scrollbar-default max-lg:mt-0  max-md:mt-0  max-md:overflow-visible max-md:scrollbar-default max-sm:hidden">
               <Previsiondays />
             </section>
+
 
           </section>
           
         </>
       )}
 
-
       {/* ********************* LA PARTIE DE VIEW 2 ********************** */}
       {activeview === VIEWS.VIEW2 && (
-        <section className="rounded-xl px-4 py-4 overflow-auto scrollbar scrollbar-none bg-slate-50 bg-opacity-35">
+        <section className="rounded-xl px-4 py-4 overflow-auto scrollbar scrollbar-none bg-slate-50 bg-opacity-35 max-sm:h-[84vh] max-sm:overflow-auto">
           <section>
-            <h2 className="text-blue-950 text-5xl flex justify-center">Liste des Villes</h2>
+            <h2 className="text-blue-950 text-5xl flex justify-center max-sm:text-4xl">Liste des Villes</h2>
             <VilleMeteo />
           </section>
         </section>
       )}
+
+      {/* pour la partie mobile  */}
+      {activeview === "view3" && (
+        <section className="bg-slate-50 hidden bg-opacity-35 mt-0 rounded-xl py-4 px-4 overflow-auto scrollbar-none 
+        text-xl text-center max-sm:block h-[84vh]">
+          <Previsiondays />
+        </section>
+
+      )}
+
+      {/* la nav bar pour le phone mobile */}
+      <section className="hidden max-sm:block">
+          < NavMobile activeview={activeview} setActiveView={setActiveView} views={VIEWS} />
+      </section>
+
     </section>
   );
 }

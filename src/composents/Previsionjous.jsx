@@ -74,7 +74,7 @@ function Previsiondays() {
     return(
         <section className="">
             <div className="text-blue-950">
-                <h1 className="text-xl">Prévision Pour 7 jours</h1>
+                <h1 className="text-xl max-sm:text-3xl">Prévision Pour 7 jours</h1>
             </div>
 
             <section className="pt-4">

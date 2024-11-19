@@ -32,7 +32,7 @@ function VilleMeteo() {
     }, []);
 
     return (
-        <section className="grid grid-cols-2 gap-3 mt-4 max-md:grid-cols-1">
+        <section className="grid grid-cols-2 gap-3 mt-4 max-md:grid-cols-1 ">
             {dataville.length > 0 ? (
                 dataville.map((ville, index) => { 
                     const colorClass = colors[index % colors.length];

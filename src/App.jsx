@@ -59,7 +59,7 @@ export default function MyApp() {
 
   return (
     <section className="font-Roboto h-screen bg-gray-950 grid grid-cols-Grid gap-3 py-2 px-2 bg-[url('./assets/images/background.jpeg')] 
-    bg-cover bg-center w-ful max-md:overflow-auto max-md:h-screen max-sm:grid-cols-1 max-sm:h-screen max-sm:fixed">
+    bg-cover bg-center w-ful max-md:overflow-auto max-md:h-screen max-sm:grid-cols-1 max-sm:fixed">
 
       {/* colonne 1 */}
       <section className="bg-slate-50 bg-opacity-35 px-2 rounded-xl max-sm:hidden">
@@ -96,7 +96,7 @@ export default function MyApp() {
       {activeview === "view1" && (
         <>
           {/* colle 2*/}
-          <section className="grid grid-cols-Grideux gap-3 pr-2 max-lg:overflow-auto max-lg:grid-cols-1 max-md:overflow-auto max-md:grid-cols-1 max-sm:h-auto
+          <section className="grid grid-cols-Grideux gap-3 pr-2 max-lg:overflow-auto max-lg:grid-cols-1 max-md:overflow-auto max-md:grid-cols-1 max-sm:h-screen
           max-sm:pb-28">
             {/* colonne 1 Grideux */}
             <section className="rounded-xl min-w-[90%] overflow-auto scrollbar scrollbar-none max-lg:overflow-visible max-lg:scrollbar-default max-md:overflow-visible max-md:scrollbar-default
@@ -155,7 +155,7 @@ export default function MyApp() {
             scrollbar-none max-lg:overflow-visible max-lg:scrollbar-default max-lg:mt-0  max-md:mt-0  max-md:overflow-visible max-md:scrollbar-default max-sm:hidden">
               <Previsiondays />
             </section>
-            
+
           </section>
           
         </>

@@ -59,7 +59,7 @@ export default function MyApp() {
 
   return (
     <section className="font-Roboto h-screen bg-gray-950 grid grid-cols-Grid gap-3 py-2 px-2 bg-[url('./assets/images/background.jpeg')] 
-    bg-cover bg-center w-ful max-md:overflow-auto max-md:h-screen max-sm:grid-cols-1 ">
+    bg-cover bg-center w-ful max-md:overflow-auto max-md:h-screen max-sm:grid-cols-1 max-sm:fixed">
 
       {/* colonne 1 */}
       <section className="bg-slate-50 bg-opacity-35 px-2 rounded-xl max-sm:hidden">
@@ -97,10 +97,10 @@ export default function MyApp() {
         <>
           {/* colle 2*/}
           <section className="grid grid-cols-Grideux gap-3 pr-2 max-lg:overflow-auto max-lg:grid-cols-1 max-md:overflow-auto max-md:grid-cols-1 
-          max-sm:h-[95vh]">
+          max-sm:h-[87vh]">
             {/* colonne 1 Grideux */}
             <section className="rounded-xl min-w-[90%] overflow-auto scrollbar scrollbar-none max-lg:overflow-visible max-lg:scrollbar-default max-md:overflow-visible max-md:scrollbar-default
-            max-sm:overflow-auto max-sm:min-w-full max-sm:max-w-full max-sm:h-[80vh]">
+            max-sm:overflow-auto max-sm:min-w-full max-sm:max-w-full max-sm:h-[75vh]">
               <div className=" bg-slate-50 z-50 bg-opacity-40 py-1 rounded-xl ">
                 <h1 className="flex justify-center text-5xl text-blue-950 max-sm:text-center max-sm:text-4xl">Meteo-App</h1>
               </div>

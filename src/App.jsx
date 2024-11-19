@@ -96,13 +96,13 @@ export default function MyApp() {
       {activeview === "view1" && (
         <>
           {/* colle 2*/}
-          <section className="grid grid-cols-Grideux gap-3 pr-2 max-lg:overflow-auto max-lg:grid-cols-1 max-md:overflow-auto max-md:grid-cols-1 max-sm:h-screen
-          max-sm:pb-28">
+          <section className="grid grid-cols-Grideux gap-3 pr-2 max-lg:overflow-auto max-lg:grid-cols-1 max-md:overflow-auto max-md:grid-cols-1 
+          max-sm:h-auto">
             {/* colonne 1 Grideux */}
             <section className="rounded-xl min-w-[90%] overflow-auto scrollbar scrollbar-none max-lg:overflow-visible max-lg:scrollbar-default max-md:overflow-visible max-md:scrollbar-default
             max-sm:overflow-auto max-sm:min-w-full max-sm:max-w-full max-sm:h-[80vh]">
-              <div className=" bg-slate-50 z-50 bg-opacity-40 py-1 rounded-xl max-sm:sticky max-sm:top-0">
-                <h1 className="flex justify-center text-5xl text-blue-950 max-sm:text-center max-sm:text-4x">Meteo-App</h1>
+              <div className=" bg-slate-50 z-50 bg-opacity-40 py-1 rounded-xl ">
+                <h1 className="flex justify-center text-5xl text-blue-950 max-sm:text-center max-sm:text-4xl">Meteo-App</h1>
               </div>
               <section className="px-10 flex items-center max-sm:flex-col max-sm:mt-5">
                 {!weatherData ? (

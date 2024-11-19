@@ -3,7 +3,7 @@ import React from "react";
 function NavMobile() {
 
     return (
-        <section className="bg-slate-50 bg-opacity-40 py-4 px-2 rounded-xl ">
+        <section className="bg-slate-50 bg-opacity-40 py-3 px-2 rounded-xl ">
             <section className="flex justify-between text-blue-950">
                 <div>
                 <button className="text-xl" type="button"> Acceuil</button>

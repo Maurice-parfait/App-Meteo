@@ -56,6 +56,7 @@ export default function MyApp() {
     fetchlocaion();
   }, []);
 
+  //***************** la logique pour la responsivite ****************************
 
   return (
     <section className="font-Roboto h-screen bg-gray-950 grid grid-cols-Grid gap-3 py-2 px-2 bg-[url('./assets/images/background.jpeg')] 

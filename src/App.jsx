@@ -60,7 +60,7 @@ export default function MyApp() {
   //***************** la logique pour la responsivite ****************************
 
   return (
-    <section className="font-Roboto h-screen bg-gray-950 grid grid-cols-Grid gap-3 py-2 px-2 bg-[url('./assets/images/background.jpeg')] 
+    <section className="font-Roboto h-auto bg-gray-950 grid grid-cols-Grid gap-3 py-2 px-2 bg-[url('./assets/images/background.jpeg')] 
     bg-cover bg-center w-ful max-md:overflow-auto max-md:h-screen max-sm:grid-cols-1 max-sm:fixed max-sm:w-full">
 
       {/* colonne 1 */}

@@ -102,7 +102,7 @@ export default function MyApp() {
           max-sm:h-[90vh]">
             {/* colonne 1 Grideux */}
             <section className="rounded-xl min-w-[90%] overflow-auto scrollbar scrollbar-none max-lg:overflow-visible max-lg:scrollbar-default max-md:overflow-visible max-md:scrollbar-default
-            max-sm:overflow-auto max-sm:min-w-full max-sm:max-w-full max-sm:h-[86vh]">
+            max-sm:overflow-auto max-sm:min-w-full max-sm:max-w-full max-sm:h-[84vh]">
               <div className=" bg-slate-50 z-50 bg-opacity-40 py-1 rounded-xl ">
                 <h1 className="flex justify-center text-5xl text-blue-950 max-sm:text-center max-sm:text-4xl">Meteo-App</h1>
               </div>

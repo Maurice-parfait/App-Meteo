@@ -13,5 +13,5 @@ export default defineConfig({
     }
   },
   
-  base: '/Meteo-App',
+  base: '/App-Meteo/',
 });

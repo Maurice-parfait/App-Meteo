@@ -60,7 +60,7 @@ export default function MyApp() {
   //***************** la logique pour la responsivite ****************************
 
   return (
-    <section className="font-Roboto h-auto bg-gray-950 grid grid-cols-Grid gap-3 py-2 px-2 bg-[url('./assets/images/background.jpeg')] 
+    <section className="font-Roboto h-screen bg-gray-950 grid grid-cols-Grid gap-3 py-2 px-2 bg-[url('./assets/images/background.jpeg')] 
     bg-cover bg-center w-ful max-md:overflow-auto max-md:h-screen max-sm:grid-cols-1 max-sm:fixed max-sm:w-full">
 
       {/* colonne 1 */}
@@ -163,7 +163,7 @@ export default function MyApp() {
 
       {/* ********************* LA PARTIE DE VIEW 2 ********************** */}
       {activeview === VIEWS.VIEW2 && (
-        <section className="rounded-xl px-4 py-4 overflow-auto scrollbar scrollbar-none bg-slate-50 bg-opacity-35 max-sm:h-[84vh] max-sm:overflow-auto">
+        <section className="rounded-xl h-screen px-4 py-4 overflow-auto scrollbar scrollbar-none bg-slate-50 bg-opacity-35 max-sm:h-[84vh] max-sm:overflow-auto">
           <section>
             <h2 className="text-blue-950 text-5xl flex justify-center max-sm:text-4xl">Liste des Villes</h2>
             <VilleMeteo />

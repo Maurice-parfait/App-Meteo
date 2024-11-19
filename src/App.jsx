@@ -59,7 +59,7 @@ export default function MyApp() {
 
   return (
     <section className="font-Roboto h-screen bg-gray-950 grid grid-cols-Grid gap-3 py-2 px-2 bg-[url('./assets/images/background.jpeg')] 
-    bg-cover bg-center w-ful max-md:overflow-auto max-md:h-screen max-sm:grid-cols-1 max-sm:h-screen ">
+    bg-cover bg-center w-ful max-md:overflow-auto max-md:h-screen max-sm:grid-cols-1 max-sm:h-screen max-sm:fixed">
 
       {/* colonne 1 */}
       <section className="bg-slate-50 bg-opacity-35 px-2 rounded-xl max-sm:hidden">
@@ -97,12 +97,12 @@ export default function MyApp() {
         <>
           {/* colle 2*/}
           <section className="grid grid-cols-Grideux gap-3 pr-2 max-lg:overflow-auto max-lg:grid-cols-1 max-md:overflow-auto max-md:grid-cols-1 max-sm:h-auto
-          max-sm:pb-5 max-sm:fixed">
+          max-sm:pb-28">
             {/* colonne 1 Grideux */}
             <section className="rounded-xl min-w-[90%] overflow-auto scrollbar scrollbar-none max-lg:overflow-visible max-lg:scrollbar-default max-md:overflow-visible max-md:scrollbar-default
-            max-sm:overflow-auto max-sm:min-w-full max-sm:max-w-full max-sm:h-[85vh]">
+            max-sm:overflow-auto max-sm:min-w-full max-sm:max-w-full max-sm:h-[80vh]">
               <div className=" bg-slate-50 z-50 bg-opacity-40 py-1 rounded-xl max-sm:sticky max-sm:top-0">
-                <h1 className="flex justify-center text-5xl text-blue-950 max-sm:text-center max-sm:text-4xl max-sm:text-red-400">Meteo-App</h1>
+                <h1 className="flex justify-center text-5xl text-blue-950 max-sm:text-center max-sm:text-4x">Meteo-App</h1>
               </div>
               <section className="px-10 flex items-center max-sm:flex-col max-sm:mt-5">
                 {!weatherData ? (

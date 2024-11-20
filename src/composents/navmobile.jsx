@@ -3,6 +3,7 @@ import React from "react";
 function NavMobile({ setActiveView, views, activeview }) {
 
     return (
+        // la nav bar de pour le mobile 
         <section className="bg-slate-50 bg-opacity-25 py-2 px-3 rounded-xl fixed bottom-0 left-0 w-full">
             <section className="flex justify-between text-blue-950">
                 <div>

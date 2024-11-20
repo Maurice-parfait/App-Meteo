@@ -14,6 +14,7 @@ function Previsiondays() {
                         const { latitude, longitude} = position.coords;
                         setLocation({ latitude, longitude});
 
+                        // la requete api pour recuperer les previsios de 7 jours de meteo
                         const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&daily=temperature_2m_max,temperature_2m_min,weather_code&timezone=auto`;
                         
                         try {
@@ -40,7 +41,7 @@ function Previsiondays() {
         fetchLocation();
     },[]);
 
-     // Associer les codes météo aux icônes
+     // Association  des codes météo aux icônes
   const PrevisionIcons = {
     0: "☀️", // Ciel clair
     1: "🌤️", // Généralement clair

@@ -6,10 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      // pour la police Roboto
       fontFamily: {
         Roboto: ['Roboto', 'serif'],
       },
 
+      // pour le grid dans l'application
       gridTemplateColumns: {
         Grid: '0.4fr 6fr',
         Grideux: '5fr 2fr'
@@ -17,6 +19,7 @@ export default {
     },
   },
   plugins: [
+    // pour bien personaliser le scrollbar 
     require('tailwind-scrollbar')
   ],
 }

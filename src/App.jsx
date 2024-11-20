@@ -36,6 +36,7 @@ export default function MyApp() {
             
             try {
               const reponse = await fetch(url);
+              if(!reponse.ok) throw error('Erreur lors de la recuperation de donne pour la meteo partant de la location de l utilisateur')
               const data = await reponse.json();
               setWeatherData(data);
             } catch (error) {
@@ -57,7 +58,7 @@ export default function MyApp() {
     fetchlocaion();
   }, []);
 
-  //***************** la logique pour la responsivite ****************************
+  
 
   return (
     <section className="font-Roboto h-screen bg-gray-950 grid grid-cols-Grid gap-3 py-2 px-2 bg-[url('./assets/images/background.jpeg')] 
@@ -141,10 +142,10 @@ export default function MyApp() {
               </section>
 
               {/* Meteo today */}
-              <OneCall />
+              <OneCall /> 
 
-              {/* Air cond */}
-              <Realfroid />
+              {/* partie condition meteorologique avec son composent Aircondition */}
+              <Realfroid /> 
             </section>
 
             
@@ -162,25 +163,26 @@ export default function MyApp() {
       )}
 
       {/* ********************* LA PARTIE DE VIEW 2 ********************** */}
+      {/* et aussi l'affiche de ville avec son composent villes.jsx */}
       {activeview === VIEWS.VIEW2 && (
         <section className="rounded-xl h-screen px-4 py-4 overflow-auto scrollbar scrollbar-none bg-slate-50 bg-opacity-35 max-sm:h-[84vh] max-sm:overflow-auto">
           <section>
             <h2 className="text-blue-950 text-5xl flex justify-center max-sm:text-4xl">Liste des Villes</h2>
-            <VilleMeteo />
+            <VilleMeteo /> 
           </section>
         </section>
       )}
 
-      {/* pour la partie mobile  */}
+      {/* pour la partie mobile, le views de prevision de 7 jours de mobile toujours avec le meme composent*/}
       {activeview === "view3" && (
         <section className="bg-slate-50 hidden bg-opacity-35 mt-0 rounded-xl py-4 px-4 overflow-auto scrollbar-none 
         text-xl text-center max-sm:block h-[84vh]">
-          <Previsiondays />
+          <Previsiondays /> 
         </section>
 
       )}
 
-      {/* la nav bar pour le phone mobile */}
+      {/* la nav bar pour le phone mobile  son composent navmobile.jsx*/}
       <section className="hidden max-sm:block">
           < NavMobile activeview={activeview} setActiveView={setActiveView} views={VIEWS} />
       </section>

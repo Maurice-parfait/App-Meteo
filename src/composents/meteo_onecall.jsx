@@ -7,7 +7,7 @@ function OneCall() {
 
   useEffect(() => {
     const fetchLocation = async () => {
-      if (navigator.geolocation) {
+      if (navigator.geolocation) { // Pour recupere la localisation de l'utilisateur 
         navigator.geolocation.getCurrentPosition(
           async (position) => {
             const { latitude, longitude } = position.coords;
@@ -21,7 +21,6 @@ function OneCall() {
               if (!response.ok) throw new Error("Erreur lors de la récupération de la météo");
               const data = await response.json();
               setWeather(data.hourly); // Obtenez les données horaires
-              // console.log(data.hourly);
             } catch (error) {
               setError("Erreur lors de la récupération de la météo heure par heure.");
               console.error(error);

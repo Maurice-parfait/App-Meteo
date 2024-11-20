@@ -183,7 +183,7 @@ export default function MyApp() {
       )}
 
       {/* la nav bar pour le phone mobile  son composent navmobile.jsx*/}
-      <section className="hidden max-sm:block">
+      <section className=" max-sm:block pb-48 max-sm:pb-0 hidden">
           < NavMobile activeview={activeview} setActiveView={setActiveView} views={VIEWS} />
       </section>
 

@@ -4,8 +4,8 @@ function NavMobile({ setActiveView, views, activeview }) {
 
     return (
         // la nav bar de pour le mobile 
-        <section className="bg-slate-50 bg-opacity-25 py-2 px-3 rounded-xl fixed bottom-0 left-0 w-full">
-            <section className="flex justify-between text-blue-950">
+        <section className="max-sm:bg-slate-50 max-sm:bg-opacity-25 max-sm:py-2 max-sm:px-3 max-sm:rounded-xl max-sm:fixed max-sm:bottom-0 max-sm:left-0 max-sm:w-full">
+            <section className="max-sm:flex max-sm:justify-between max-sm:text-blue-950">
                 <div>
                 <button type="button"
                 onClick={() => setActiveView(views.VIEW1)}

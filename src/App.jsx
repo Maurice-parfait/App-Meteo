@@ -10,7 +10,7 @@ import NavMobile from "./composents/navmobile";
 const VIEWS = {
   VIEW1: "view1",
   VIEW2: "view2",
-  VIEW3: "view3",
+  VIEW3: "view3", // views pour le mobile
 };
 
 export default function MyApp() {
@@ -104,7 +104,7 @@ export default function MyApp() {
             <section className="rounded-xl min-w-[90%] overflow-auto scrollbar scrollbar-none max-lg:overflow-visible max-lg:scrollbar-default max-md:overflow-visible max-md:scrollbar-default
             max-sm:overflow-auto max-sm:min-w-full max-sm:max-w-full max-sm:h-[84vh]">
               <div className=" bg-slate-50 z-50 bg-opacity-40 py-1 rounded-xl ">
-                <h1 className="flex justify-center text-5xl text-blue-950 max-sm:text-center max-sm:text-4xl">Meteo-App</h1>
+                <h1 className="flex justify-center text-5xl text-blue-950 max-sm:text-center max-sm:text-4xl">Météo-App</h1>
               </div>
               <section className="px-10 flex items-center max-sm:flex-col max-sm:mt-5">
                 {!weatherData ? (

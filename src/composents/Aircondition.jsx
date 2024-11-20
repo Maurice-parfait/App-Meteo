@@ -48,7 +48,7 @@ function Realfroid() {
 
             <section className="grid grid-cols-2 max-sm:grid-cols-2">
                 {!meteo ? (
-                    <div className="flex justify-center w-full ml-56">
+                    <div className="flex justify-center w-full ml-56 max-md:ml-28 max-sm:ml-16">
                         <div className="py-12">
                             <div className="h-12 w-12 animate-spin rounded-full border-8 border-transparent border-t-orange-300 max-sm:border-t-slate-50 max-sm:border-opacity-50" type="button"> </div>
                         </div>

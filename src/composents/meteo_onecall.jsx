@@ -100,7 +100,7 @@ function OneCall() {
         ) : (
           <div className="flex justify-center w-full">
             <div className="py-8">
-              <div className="h-16 w-16 animate-spin  rounded-full border-8 border-transparent  border-t-orange-300" type="button"> </div>
+              <div className="h-16 w-16 animate-spin  rounded-full border-8 border-transparent  border-t-orange-300 max-sm:border-t-slate-50 max-sm:border-opacity-50" type="button"> </div>
             </div>
           </div>
         )}
